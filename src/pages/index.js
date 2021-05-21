@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Tag from "../components/tag"
 import Tags from "../components/tags"
 
 const BlogIndex = ({ data, location }) => {
@@ -28,6 +29,7 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
       <Bio />
+      <Tags />
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
@@ -47,8 +49,7 @@ const BlogIndex = ({ data, location }) => {
                     </Link>
                   </h2>
                   <small>{post.frontmatter.date}</small>
-                  {tags && tags.length > 0 ? ` - ` : ``}
-                  <Tags>{tags}</Tags>
+                  {tags && tags.map(tag => <Tag key={tag} tag={tag} />)}
                 </header>
                 <section>
                   <p

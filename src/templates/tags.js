@@ -15,7 +15,7 @@ const Tags = ({ pageContext, data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <h1>{tagHeader}</h1>
-      <ul>
+      <ul style={{ listStyle: "none" }}>
         {edges.map(({ node }) => {
           const { slug } = node.fields
           const { title } = node.frontmatter
@@ -30,7 +30,6 @@ const Tags = ({ pageContext, data, location }) => {
               This links to a page that does not yet exist.
               You'll come back to it!
             */}
-      <Link to="/tags">All tags</Link>
     </Layout>
   )
 }

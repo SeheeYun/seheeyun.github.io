@@ -1,26 +1,44 @@
 import React from "react"
+import PropTypes from "prop-types"
 
-const Tags = ({ children }) =>
-  children && (
-    <ul style={{ marginBottom: 0, marginLeft: 0, display: "inline-flex" }}>
-      {children.map(t => (
-        <li
-          key={t}
-          style={{
-            borderRadius: `4px`,
-            border: `1px solid grey`,
-            padding: `2px 6px`,
-            marginRight: `5px`,
-            fontSize: `80%`,
-            backgroundColor: "#007acc",
-            color: "white",
-            listStyle: "none",
-          }}
-        >
-          {t}
-        </li>
-      ))}
-    </ul>
+// Components
+import { graphql, useStaticQuery } from "gatsby"
+import Tag from "./tag"
+
+const Tags = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allMarkdownRemark(limit: 2000) {
+        group(field: frontmatter___tags) {
+          fieldValue
+        }
+      }
+    }
+  `)
+
+  const group = data.allMarkdownRemark?.group
+
+  return (
+    <div>
+      <ul>
+        {group.map(tag => (
+          <Tag key={tag.fieldValue} tag={tag.fieldValue} />
+        ))}
+      </ul>
+    </div>
   )
+}
+
+Tags.propTypes = {
+  data: PropTypes.shape({
+    allMarkdownRemark: PropTypes.shape({
+      group: PropTypes.arrayOf(
+        PropTypes.shape({
+          fieldValue: PropTypes.string.isRequired,
+        }).isRequired
+      ),
+    }),
+  }),
+}
 
 export default Tags
