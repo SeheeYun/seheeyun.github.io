@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Tags from "../components/tags"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -30,6 +31,7 @@ const BlogIndex = ({ data, location }) => {
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
+          const tags = post.frontmatter.tags
 
           return (
             <li key={post.fields.slug}>
@@ -45,6 +47,8 @@ const BlogIndex = ({ data, location }) => {
                     </Link>
                   </h2>
                   <small>{post.frontmatter.date}</small>
+                  {tags && tags.length > 0 ? ` - ` : ``}
+                  <Tags>{tags}</Tags>
                 </header>
                 <section>
                   <p
@@ -82,6 +86,7 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          tags
         }
       }
     }
