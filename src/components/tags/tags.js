@@ -1,9 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
+import * as styles from "./tags.module.css"
+import Tag from "../tag/tag"
 
-// Components
 import { graphql, useStaticQuery } from "gatsby"
-import Tag from "./tag"
 
 const Tags = () => {
   const data = useStaticQuery(graphql`
@@ -19,13 +19,11 @@ const Tags = () => {
   const group = data.allMarkdownRemark?.group
 
   return (
-    <div>
-      <ul>
-        {group.map(tag => (
-          <Tag key={tag.fieldValue} tag={tag.fieldValue} />
-        ))}
-      </ul>
-    </div>
+    <ul className={styles.ul}>
+      {group.map(tag => (
+        <Tag key={tag.fieldValue} tag={tag.fieldValue} />
+      ))}
+    </ul>
   )
 }
 

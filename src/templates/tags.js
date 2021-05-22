@@ -3,6 +3,7 @@ import * as React from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 
 const Tags = ({ pageContext, data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -14,6 +15,7 @@ const Tags = ({ pageContext, data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
+      <Seo title={tag} />
       <h1>{tagHeader}</h1>
       <ul style={{ listStyle: "none" }}>
         {edges.map(({ node }) => {

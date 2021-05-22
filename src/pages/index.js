@@ -1,11 +1,12 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
+import "@fortawesome/fontawesome-free/js/all.js"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Tag from "../components/tag"
-import Tags from "../components/tags"
+import Tag from "../components/tag/tag"
+import Tags from "../components/tags/tags"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -29,6 +30,7 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
       <Bio />
+      <hr />
       <Tags />
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
@@ -49,7 +51,14 @@ const BlogIndex = ({ data, location }) => {
                     </Link>
                   </h2>
                   <small>{post.frontmatter.date}</small>
-                  {tags && tags.map(tag => <Tag key={tag} tag={tag} />)}
+                  <ul className="tags">
+                    {tags && tags.length > 0 ? (
+                      <i className="fas fa-tag"></i>
+                    ) : (
+                      ``
+                    )}
+                    {tags && tags.map(tag => <Tag key={tag} tag={tag} />)}
+                  </ul>
                 </header>
                 <section>
                   <p

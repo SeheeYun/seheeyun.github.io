@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `TIL`,
+    title: `TIL: Today I Learned`,
     author: {
       name: `Sehee Yun`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      summary: `오늘의 배움을 되돌아보고 매일의 성장을 기록합니다.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://seheeyun.github.io`,
