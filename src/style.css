@@ -162,32 +162,29 @@ h6 > a {
 
 /* Prose */
 
-p {
-  line-height: var(--lineHeight-relaxed);
-  --baseline-multiplier: 0.179;
-  --x-height-multiplier: 0.35;
-  margin: var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0);
-  padding: var(--spacing-0);
-}
-
-ul,
+.index ul,
 ol {
   margin-left: var(--spacing-0);
   margin-right: var(--spacing-0);
   padding: var(--spacing-0);
-  margin-bottom: var(--spacing-8);
   list-style-position: outside;
   list-style-image: none;
+  list-style: none;
+}
+
+.index section p {
+  font-size: 90%;
+  color: var(--color-text-light);
 }
 
 ul li,
 ol li {
   padding-left: var(--spacing-0);
-  margin-bottom: calc(var(--spacing-8) / 2);
+  margin-bottom: calc(var(--spacing-8) / 6);
 }
 
 li > p {
-  margin-bottom: calc(var(--spacing-8) / 2);
+  margin-top: 0;
 }
 
 li > ul {
@@ -201,9 +198,6 @@ blockquote {
   margin-right: var(--spacing-8);
   padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);
   border-left: var(--spacing-1) solid var(--color-primary);
-  font-size: var(--fontSize-2);
-  font-style: italic;
-  margin-bottom: var(--spacing-8);
 }
 
 blockquote > :last-child {
@@ -339,6 +333,10 @@ a:focus {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.blog-post h2 {
+  color: var(--color-primary);
 }
 
 /* Media queries */

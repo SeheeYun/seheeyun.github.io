@@ -32,7 +32,7 @@ const BlogIndex = ({ data, location }) => {
       <Bio />
       <hr />
       <Tags />
-      <ol style={{ listStyle: `none` }}>
+      <ol className="index">
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
           const tags = post.frontmatter.tags
