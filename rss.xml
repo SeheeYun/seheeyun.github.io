@@ -1,5 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[TIL: Today I Learned]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://seheeyun.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 23 May 2021 17:36:46 GMT</lastBuildDate><item><title><![CDATA[210523]]></title><description><![CDATA[내가 이루고픈 큰 목표를 위해선 작은 목표들과 그에 대한 실천이 선행되어야한다.
-목표들을 달성하는데 동기부여를 하고 그 날 공부한 것을 되돌아보기위해 TIL…]]></description><link>https://seheeyun.github.io/210523/</link><guid isPermaLink="false">https://seheeyun.github.io/210523/</guid><content:encoded>&lt;p&gt;내가 이루고픈 큰 목표를 위해선 작은 목표들과 그에 대한 실천이 선행되어야한다.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[TIL: Today I Learned]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://seheeyun.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 24 May 2021 17:29:30 GMT</lastBuildDate><item><title><![CDATA[210524]]></title><description><![CDATA[Today DNS, CDN 개념 정리 firebase 공식 문서 읽어보고 실습 card maker 프로젝트에 Firebase Authentication 적용
+firebase 인증 추가해주고 ui는 따로 만들지않고 firebaseui…]]></description><link>https://seheeyun.github.io/210524/</link><guid isPermaLink="false">https://seheeyun.github.io/210524/</guid><pubDate>Mon, 24 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Today&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; DNS, CDN 개념 정리&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;
+&lt;p&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; firebase 공식 문서 읽어보고 실습&lt;/p&gt;
+&lt;p&gt;card maker 프로젝트에 Firebase Authentication 적용&lt;br&gt;
+firebase 인증 추가해주고 ui는 따로 만들지않고 firebaseui 적용&lt;br&gt;
+컴포넌트에서 start 메소드를 사용 할 수있게 export 해줌&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;startFirebaseUI&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;elementId&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ui&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;elementId&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  signInOptions&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;firebase&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;auth&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;EmailAuthProvider&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;PROVIDER_ID&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;// Other config options...&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; startFirebaseUI&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;참고&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://firebase.google.com/docs/web/setup?hl=ko&amp;#x26;sdk_version=v8&quot;&gt;https://firebase.google.com/docs/web/setup?hl=ko&amp;#x26;sdk_version=v8&lt;/a&gt;
+&lt;a href=&quot;https://firebase.google.com/docs/auth/web/firebaseui?hl=ko&quot;&gt;https://firebase.google.com/docs/auth/web/firebaseui?hl=ko&lt;/a&gt;
+&lt;a href=&quot;https://firebaseopensource.com/projects/firebase/firebaseui-web/&quot;&gt;https://firebaseopensource.com/projects/firebase/firebaseui-web/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tomorrow&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; 모던 JavaScript 튜토리얼 (코드품질부터) 읽기&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; 프로그래머스 코테 입문&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; card maker 프로젝트 header, main, login ui 만들기&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[210523]]></title><description><![CDATA[내가 이루고픈 큰 목표를 위해선 작은 목표들과 그에 대한 실천이 선행되어야한다.
+목표들을 달성하는데 동기부여를 하고 그 날 공부한 것을 되돌아보기위해 TIL…]]></description><link>https://seheeyun.github.io/210523/</link><guid isPermaLink="false">https://seheeyun.github.io/210523/</guid><pubDate>Sun, 23 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;내가 이루고픈 큰 목표를 위해선 작은 목표들과 그에 대한 실천이 선행되어야한다.
 목표들을 달성하는데 동기부여를 하고 그 날 공부한 것을 되돌아보기위해 TIL를 작성해보자!&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;오늘 한 일과 배운것을 기록하면서 애매했던 개념들을 확실히 정리한다.&lt;/li&gt;
@@ -14,12 +42,12 @@
 &lt;li&gt;
 &lt;p&gt;gatsby는 배포하기전 &lt;code class=&quot;language-text&quot;&gt;빌드&lt;/code&gt; 시점에 소스들을 html로 렌더링하기때문에 &lt;code class=&quot;language-text&quot;&gt;배포&lt;/code&gt; 시 소스들이 변환되어져있다. 만들어둔 소스코드을 유지하기 위해 브랜치를 나눠서 사용한다.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;빌드: 소스 코드 파일을 컴퓨터나 휴대폰에서 실행할 수 있는 독립 소프트웨어 가공물로 변환하는 과정을 말하거나 그에 대한 결과물을 일컫는다. &lt;br&gt; 배포: 빌드가 완료된 실행파일을 사용자가 접근할 수 있는 환경에 배치하는 일&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;빌드&lt;/strong&gt;: 소스 코드 파일을 컴퓨터나 휴대폰에서 실행할 수 있는 독립 소프트웨어 가공물로 변환하는 과정을 말하거나 그에 대한 결과물을 일컫는다. &lt;br&gt; &lt;strong&gt;배포&lt;/strong&gt;: 빌드가 완료된 실행파일을 사용자가 접근할 수 있는 환경에 배치하는 일&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;키워드를 이용해 글을 찾을 수 있도록 태그 기능을 추가했다.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;도움 받은 글&lt;/h4&gt;
+&lt;h4&gt;참고&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;https://velog.io/@magnoliarfsit/TIL-Session-Gatsby%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0&quot;&gt;https://velog.io/@magnoliarfsit/TIL-Session-Gatsby로-블로그-만들기&lt;/a&gt;
 &lt;a href=&quot;https://www.gatsbyjs.com/docs/adding-tags-and-categories-to-blog-posts/&quot;&gt;https://www.gatsbyjs.com/docs/adding-tags-and-categories-to-blog-posts/&lt;/a&gt;
 &lt;a href=&quot;https://wayhome25.github.io/&quot;&gt;https://wayhome25.github.io/&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
