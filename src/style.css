@@ -116,7 +116,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: var(--fontWeight-bold);
+  /* font-weight: var(--fontWeight-bold); */
   color: var(--color-heading);
 }
 
@@ -331,6 +331,7 @@ a:focus {
 }
 
 code {
+  font-size: 0.875rem !important;
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
