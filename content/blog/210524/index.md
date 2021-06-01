@@ -1,7 +1,7 @@
 ---
 title: "210524"
 date: "2021-05-24"
-tags: ["Firebase"]
+tags: ["firebase"]
 ---
 
 ## Today
@@ -24,7 +24,7 @@ tags: ["Firebase"]
   export default startFirebaseUI
   ```
 
-#### 참고
+#### 도움 받은 글
 
 https://firebase.google.com/docs/web/setup?hl=ko&sdk_version=v8
 https://firebase.google.com/docs/auth/web/firebaseui?hl=ko

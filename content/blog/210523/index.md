@@ -1,7 +1,7 @@
 ---
 title: "210523"
 date: "2021-05-23"
-tags: ["TIL", "Gatsby"]
+tags: ["TIL", "gatsby"]
 ---
 
 내가 이루고픈 큰 목표를 위해선 작은 목표들과 그에 대한 실천이 선행되어야한다.
@@ -12,7 +12,7 @@ tags: ["TIL", "Gatsby"]
 
 ## Today
 
-#### GatsbyJS로 블로그 구현
+### GatsbyJS로 블로그 구현
 
 https://www.gatsbyjs.com/docs/ 튜토리얼 & 가이드
 
@@ -22,7 +22,7 @@ https://www.gatsbyjs.com/docs/ 튜토리얼 & 가이드
   > **빌드**: 소스 코드 파일을 컴퓨터나 휴대폰에서 실행할 수 있는 독립 소프트웨어 가공물로 변환하는 과정을 말하거나 그에 대한 결과물을 일컫는다. <br> **배포**: 빌드가 완료된 실행파일을 사용자가 접근할 수 있는 환경에 배치하는 일
 - 키워드를 이용해 글을 찾을 수 있도록 태그 기능을 추가했다.
 
-#### 참고
+#### 도움 받은 글
 
 https://velog.io/@magnoliarfsit/TIL-Session-Gatsby로-블로그-만들기
 https://www.gatsbyjs.com/docs/adding-tags-and-categories-to-blog-posts/

@@ -162,14 +162,19 @@ h6 > a {
 
 /* Prose */
 
-.index ul,
-ol {
+.index,
+.index ul {
   margin-left: var(--spacing-0);
   margin-right: var(--spacing-0);
   padding: var(--spacing-0);
-  list-style-position: outside;
   list-style-image: none;
   list-style: none;
+}
+
+ol,
+ul {
+  list-style-position: outside;
+  padding-left: 16px;
 }
 
 .index section p {
@@ -185,11 +190,6 @@ ol li {
 
 li > p {
   margin-top: 0;
-}
-
-li > ul {
-  margin-left: var(--spacing-8);
-  margin-top: calc(var(--spacing-8) / 2);
 }
 
 blockquote {
@@ -303,10 +303,6 @@ a:focus {
   margin: var(--spacing-0);
 }
 
-.gatsby-highlight {
-  margin-bottom: var(--spacing-8);
-}
-
 .tags {
   display: flex;
   align-items: center;
@@ -338,6 +334,10 @@ code {
 
 .blog-post h2 {
   color: var(--color-primary);
+}
+
+.blog-post ol {
+  list-style: decimal;
 }
 
 /* Media queries */
