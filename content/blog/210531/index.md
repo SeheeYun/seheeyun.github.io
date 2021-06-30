@@ -1,7 +1,7 @@
 ---
 title: "210531"
 date: "2021-05-31"
-tags: ["react"]
+tags: ["react", "html"]
 ---
 
 ## Today
