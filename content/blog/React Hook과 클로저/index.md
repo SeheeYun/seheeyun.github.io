@@ -4,8 +4,6 @@ date: "2021-09-15"
 tags: ["react", "javascript"]
 ---
 
-## React Hook과 클로저
-
 > **useEffect를 컴포넌트 안에서 불러내는 이유는 무엇일까요?** useEffect를 컴포넌트 내부에 둠으로써 effect를 통해 count state 변수(또는 그 어떤 prop에도)에 접근할 수 있게 됩니다. 함수 범위 안에 존재하기 때문에 특별한 API 없이도 값을 얻을 수 있는 것입니다. Hook은 자바스크립트의 **클로저**를 이용하여 리액트에 한정된 API를 고안하는 것보다 자바스크립트가 이미 가지고 있는 방법을 이용하여 문제를 해결합니다.
 
 React 공식 문서를 보고있는데 계속 클로저가 언급된다. 알고보니,
@@ -26,7 +24,7 @@ React hook에서는 useState를 통해 생성한 상태를 접근하고 유지�
 
 #### 도움 받은 글
 
-https://hewonjeong.github.io/deep-dive-how-do-react-hooks-really-work-ko/
-https://yeoulcoding.tistory.com/149#recentEntries
-https://velog.io/@ggong/useState-Hook과-클로저
+https://hewonjeong.github.io/deep-dive-how-do-react-hooks-really-work-ko/<br/>
+https://yeoulcoding.tistory.com/149#recentEntries<br/>
+https://velog.io/@ggong/useState-Hook과-클로저<br/>
 https://poiemaweb.com/js-closure

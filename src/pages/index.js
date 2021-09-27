@@ -50,7 +50,7 @@ const BlogIndex = ({ data, location }) => {
                       <span itemProp="headline">{title}</span>
                     </Link>
                   </h2>
-                  {/* <small>{post.frontmatter.date}</small> */}
+                  <small>{post.frontmatter.date}</small>
                   <ul className="tags">
                     {tags && tags.length > 0 ? (
                       <i className="fas fa-tag"></i>

@@ -4,8 +4,6 @@ date: "2021-06-30"
 tags: ["d3"]
 ---
 
-## D3.js 사용하기
-
 ui/ux나 비주얼에 관심이 많아서 어떤 라이브러리를 배워볼까 고민하다가 단순한 인터랙션이나 비주얼보단 의미있는, 좀 더 실용적인 시각화 라이브러리를 사용해보고 싶었고 data를 dom 요소로 매핑할 수 있는 D3(Data Driven Documents)를 선택했다. D3는 단순히 차트를 만드는 것 외에도 다양한 활용이 가능하다.
 
 ### 특징
@@ -62,8 +60,8 @@ d3가 대부분을 처리하고 react는 step back해서 svg 요소를 제공하
 
 #### 도움 받은 글
 
-https://github.com/d3/d3/wiki
-https://github.com/zziuni/d3/wiki/API-Reference
-https://mynameisdabin.tistory.com/15?category=786517
-https://velog.io/@smooth97/-Data-Visualizing-D3.js-란
+https://github.com/d3/d3/wiki<br/>
+https://github.com/zziuni/d3/wiki/API-Reference<br/>
+https://mynameisdabin.tistory.com/15?category=786517<br/>
+https://velog.io/@smooth97/-Data-Visualizing-D3.js-란<br/>
 https://youtu.be/9uEmNgHzPhQ
