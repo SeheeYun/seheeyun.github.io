@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[TIL: Today I Learned]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://seheeyun.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 27 Sep 2021 15:26:00 GMT</lastBuildDate><item><title><![CDATA[React Hook과 클로저]]></title><description><![CDATA[React Hook과 클로저 useEffect를 컴포넌트 안에서 불러내는 이유는 무엇일까요? useEffect를 컴포넌트 내부에 둠으로써 effect를 통해 count state 변수(또는 그 어떤 prop…]]></description><link>https://seheeyun.github.io/React Hook과 클로저/</link><guid isPermaLink="false">https://seheeyun.github.io/React Hook과 클로저/</guid><pubDate>Wed, 15 Sep 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;React Hook과 클로저&lt;/h2&gt;
-&lt;blockquote&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sehee Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://seheeyun.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 27 Sep 2021 15:57:14 GMT</lastBuildDate><item><title><![CDATA[React Hook과 클로저]]></title><description><![CDATA[useEffect를 컴포넌트 안에서 불러내는 이유는 무엇일까요? useEffect를 컴포넌트 내부에 둠으로써 effect를 통해 count state 변수(또는 그 어떤 prop…]]></description><link>https://seheeyun.github.io/React Hook과 클로저/</link><guid isPermaLink="false">https://seheeyun.github.io/React Hook과 클로저/</guid><pubDate>Wed, 15 Sep 2021 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;useEffect를 컴포넌트 안에서 불러내는 이유는 무엇일까요?&lt;/strong&gt; useEffect를 컴포넌트 내부에 둠으로써 effect를 통해 count state 변수(또는 그 어떤 prop에도)에 접근할 수 있게 됩니다. 함수 범위 안에 존재하기 때문에 특별한 API 없이도 값을 얻을 수 있는 것입니다. Hook은 자바스크립트의 &lt;strong&gt;클로저&lt;/strong&gt;를 이용하여 리액트에 한정된 API를 고안하는 것보다 자바스크립트가 이미 가지고 있는 방법을 이용하여 문제를 해결합니다.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;React 공식 문서를 보고있는데 계속 클로저가 언급된다. 알고보니,&lt;/p&gt;
@@ -15,11 +14,10 @@
 &lt;p&gt;React hook에서는 useState를 통해 생성한 상태를 접근하고 유지하기 위해서 useState 바깥쪽에 state를 저장한다고한다.&lt;/p&gt;
 &lt;p&gt;클로저의 개념을 공부할 때 체감으로 다가오는 예시가 없어서 잘 이해가 되지않았었는데 아주 가까이에서 사용되고있었다. 소름&lt;/p&gt;
 &lt;h4&gt;도움 받은 글&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;https://hewonjeong.github.io/deep-dive-how-do-react-hooks-really-work-ko/&quot;&gt;https://hewonjeong.github.io/deep-dive-how-do-react-hooks-really-work-ko/&lt;/a&gt;
-&lt;a href=&quot;https://yeoulcoding.tistory.com/149#recentEntries&quot;&gt;https://yeoulcoding.tistory.com/149#recentEntries&lt;/a&gt;
-&lt;a href=&quot;https://velog.io/@ggong/useState-Hook%EA%B3%BC-%ED%81%B4%EB%A1%9C%EC%A0%80&quot;&gt;https://velog.io/@ggong/useState-Hook과-클로저&lt;/a&gt;
-&lt;a href=&quot;https://poiemaweb.com/js-closure&quot;&gt;https://poiemaweb.com/js-closure&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[D3.js 사용하기]]></title><description><![CDATA[D3.js 사용하기 ui/ux나 비주얼에 관심이 많아서 어떤 라이브러리를 배워볼까 고민하다가 단순한 인터랙션이나 비주얼보단 의미있는, 좀 더 실용적인 시각화 라이브러리를 사용해보고 싶었고 data를 dom 요소로 매핑할 수 있는 D3(Data…]]></description><link>https://seheeyun.github.io/D3.js 사용하기/</link><guid isPermaLink="false">https://seheeyun.github.io/D3.js 사용하기/</guid><pubDate>Wed, 30 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;D3.js 사용하기&lt;/h2&gt;
-&lt;p&gt;ui/ux나 비주얼에 관심이 많아서 어떤 라이브러리를 배워볼까 고민하다가 단순한 인터랙션이나 비주얼보단 의미있는, 좀 더 실용적인 시각화 라이브러리를 사용해보고 싶었고 data를 dom 요소로 매핑할 수 있는 D3(Data Driven Documents)를 선택했다. D3는 단순히 차트를 만드는 것 외에도 다양한 활용이 가능하다.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://hewonjeong.github.io/deep-dive-how-do-react-hooks-really-work-ko/&quot;&gt;https://hewonjeong.github.io/deep-dive-how-do-react-hooks-really-work-ko/&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;https://yeoulcoding.tistory.com/149#recentEntries&quot;&gt;https://yeoulcoding.tistory.com/149#recentEntries&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;https://velog.io/@ggong/useState-Hook%EA%B3%BC-%ED%81%B4%EB%A1%9C%EC%A0%80&quot;&gt;https://velog.io/@ggong/useState-Hook과-클로저&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;https://poiemaweb.com/js-closure&quot;&gt;https://poiemaweb.com/js-closure&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[D3.js 사용하기]]></title><description><![CDATA[ui/ux나 비주얼에 관심이 많아서 어떤 라이브러리를 배워볼까 고민하다가 단순한 인터랙션이나 비주얼보단 의미있는, 좀 더 실용적인 시각화 라이브러리를 사용해보고 싶었고 data를 dom 요소로 매핑할 수 있는 D3(Data Driven…]]></description><link>https://seheeyun.github.io/D3.js 사용하기/</link><guid isPermaLink="false">https://seheeyun.github.io/D3.js 사용하기/</guid><pubDate>Wed, 30 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ui/ux나 비주얼에 관심이 많아서 어떤 라이브러리를 배워볼까 고민하다가 단순한 인터랙션이나 비주얼보단 의미있는, 좀 더 실용적인 시각화 라이브러리를 사용해보고 싶었고 data를 dom 요소로 매핑할 수 있는 D3(Data Driven Documents)를 선택했다. D3는 단순히 차트를 만드는 것 외에도 다양한 활용이 가능하다.&lt;/p&gt;
 &lt;h3&gt;특징&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;웹 표준에 가깝다.
@@ -60,10 +58,10 @@ update 콜백함수 또한 같은 이유로 지정해줄 필요가 없다.&lt;/p
 &lt;p&gt;d3가 대부분을 처리하고 react는 step back해서 svg 요소를 제공하는 방식을 사용했다.
 활용하기에따라 d3는 단순히 계산을 하고 계산된 값을 react가 렌더링하게 할 수 도있다.&lt;/p&gt;
 &lt;h4&gt;도움 받은 글&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/d3/d3/wiki&quot;&gt;https://github.com/d3/d3/wiki&lt;/a&gt;
-&lt;a href=&quot;https://github.com/zziuni/d3/wiki/API-Reference&quot;&gt;https://github.com/zziuni/d3/wiki/API-Reference&lt;/a&gt;
-&lt;a href=&quot;https://mynameisdabin.tistory.com/15?category=786517&quot;&gt;https://mynameisdabin.tistory.com/15?category=786517&lt;/a&gt;
-&lt;a href=&quot;https://velog.io/@smooth97/-Data-Visualizing-D3.js-%EB%9E%80&quot;&gt;https://velog.io/@smooth97/-Data-Visualizing-D3.js-란&lt;/a&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/d3/d3/wiki&quot;&gt;https://github.com/d3/d3/wiki&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;https://github.com/zziuni/d3/wiki/API-Reference&quot;&gt;https://github.com/zziuni/d3/wiki/API-Reference&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;https://mynameisdabin.tistory.com/15?category=786517&quot;&gt;https://mynameisdabin.tistory.com/15?category=786517&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;https://velog.io/@smooth97/-Data-Visualizing-D3.js-%EB%9E%80&quot;&gt;https://velog.io/@smooth97/-Data-Visualizing-D3.js-란&lt;/a&gt;&lt;br/&gt;
 &lt;a href=&quot;https://youtu.be/9uEmNgHzPhQ&quot;&gt;https://youtu.be/9uEmNgHzPhQ&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[210531]]></title><description><![CDATA[Today React Router 다른 페이지에 props 넘겨주기 어떤 페이지 컴포넌트에서 다른 페이지로 넘어갈때, 컴포넌트가 가지고있는 state를 props로 전달 해줘야하는 경우 Link나 useHistory hook…]]></description><link>https://seheeyun.github.io/210531/</link><guid isPermaLink="false">https://seheeyun.github.io/210531/</guid><pubDate>Mon, 31 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Today&lt;/h2&gt;
 &lt;h3&gt;React Router 다른 페이지에 props 넘겨주기&lt;/h3&gt;
 &lt;p&gt;어떤 페이지 컴포넌트에서 다른 페이지로 넘어갈때, 컴포넌트가 가지고있는 state를 props로 전달 해줘야하는 경우&lt;/p&gt;
