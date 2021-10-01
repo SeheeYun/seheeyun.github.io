@@ -40,6 +40,6 @@ tags: ["javascript", "browser"]
 
 #### 도움 받은 글
 
-https://velog.io/@raejoonee/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%99%80-%EC%8A%A4%EB%A0%88%EB%93%9C%EC%9D%98-%EC%B0%A8%EC%9D%B4<br/>
+https://velog.io/@raejoonee/프로세스와-스레드의-차이<br/>
 https://academy.dream-coding.com/<br/>
 [사용된 그림 출처](https://joshua1988.github.io/)
