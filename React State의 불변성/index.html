@@ -7,19 +7,19 @@ state와 다르게 컴포넌트 외부에서 데이터를 받아온다. 외부�
 컴포넌트 UI를 위한 데이터를 보관하는 오브젝트로, 이 state가 업데이트 되면 render 함수가 호출 된다. 컴포넌트 안에서 정의된다. props
 state와 다르게 컴포넌트 외부에서 데이터를 받아온다. 외부의 데이터에따라 UI…"/><link as="script" rel="preload" href="/webpack-runtime-38421739bae5ba69c9fc.js"/><link as="script" rel="preload" href="/framework-341c3c82f92be86019fb.js"/><link as="script" rel="preload" href="/app-9118056890d5125b80fe.js"/><link as="script" rel="preload" href="/commons-9a95d0969cb9b7bcef6a.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-97b5e1a08d1bdfa3a315.js"/><link as="fetch" rel="preload" href="/page-data/React State의 불변성/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/230163734.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3589320610.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="global-wrapper" data-is-root-path="false"><header class="global-header"><a class="header-link-home" href="/">Sehee Blog</a></header><main><article class="blog-post" itemscope="" itemType="http://schema.org/Article"><header><h1 itemProp="headline">React State의 불변성</h1><p>September 30, 2021</p></header><section itemProp="articleBody"><h3>State와 Props</h3>
 <ul>
-<li>state<br/>
+<li><strong>state</strong><br/>
 컴포넌트 UI를 위한 데이터를 보관하는 오브젝트로, 이 state가 업데이트 되면 render 함수가 호출 된다. 컴포넌트 안에서 정의된다.</li>
-<li>props<br/>
+<li><strong>props</strong><br/>
 state와 다르게 컴포넌트 외부에서 데이터를 받아온다. 외부의 데이터에따라 UI가 변경될 수 있고 재사용성을 높일 수 있다.</li>
 </ul>
 <p>state와 props 객체안에 key: value는 읽기전용으로 직접 수정하면 안된다. state는 setState() 함수를 이용해서 업데이트 해야 한다.</p>
 <h3>State의 불변성</h3>
-<p>리액트에서는 state 객체의 값을 직접적으로 수정하면 안된다. 이것을 불변성 유지라고 하는데, ‘push, splice, unshift, pop’과 같은 내장함수는 배열 자체를 직접 수정하게 되므로 적합하지 않다. 대신, 기존의 배열에 기반하여 <strong>새 배열을 만들어내는 ‘concat, slice, map, filter’과 같은 함수를 사용</strong>해야 한다.</p>
-<p>리액트는 컴포넌트의 state가 변경되면 함수를 호출해 컴포넌트를 리렌더링하고 상위의 컴포넌트가 리렌더링되면 하위의 모든 컴포넌트도 리렌더링하는데, 버츄얼 DOM tree와 실제 DOM tree를 비교해서 실질적으로 변화가있는 부분만 업데이트한다.</p>
+<p>리액트에서는 state 객체의 값을 직접적으로 수정하면 안된다. 이것을 불변성 유지라고 하는데, <code class="language-text">push, splice, unshift, pop</code>과 같은 내장함수는 배열 자체를 직접 수정하게 되므로 적합하지 않다. 대신, 기존의 배열에 기반하여 새 배열을 만들어내는 <code class="language-text">concat, slice, map, filter</code>과 같은 함수를 사용해야 한다.</p>
+<p>리액트는 컴포넌트의 state가 변경되면 함수를 호출해 컴포넌트를 리렌더링하고 상위의 컴포넌트가 리렌더링되면 하위의 모든 컴포넌트도 리렌더링되는데, Virtual DOM tree와 실제 DOM tree를 비교해서 실질적으로 변화가있는 부분만 업데이트한다.</p>
 <p>이 과정에서 렌더링 함수가 불필요하게 호출 되는 것을 막고자 PureComponent를 적용해 줄 수 있다. PureComponent는 props와 state에 대하여 얕은 비교를 수행하고, 변화가 없다면 함수를 호출하지않는다.</p>
-<p>불변성 유지가 중요한 이유는 이 얕은 비교는 각 오브젝트 안에 데이터까진 확인하지않고 오브젝트의 참조만을 비교한다.</p>
-<p>state의 데이터를 직접적으로 수정하게 될 경우 데이터의 값은 바뀌지만 참조값은 바뀌지않기 때문에 state가 변화하지않았다고 판단하여 리렌더링되지않는다.</p>
-<p>불변성 유지를 위해 위와같이 새 배열을 만드는 메서드를 사용하거나 얕은 복사를 수행하는 Object.assign, spread syntax를 사용한다.</p>
+<p>불변성 유지가 중요한 이유는 이 <strong>얕은 비교는 각 오브젝트 안에 데이터까진 확인하지않고 오브젝트의 참조만을 비교</strong>하는데,<br/>
+state의 데이터를 직접적으로 수정하게 될 경우 데이터의 값은 바뀌지만 참조값은 바뀌지않기 때문에 state가 변화하지않았다고 판단하여 리렌더링되지않는다.</p>
+<p><strong>불변성 유지를 위해 위와같이 새 배열을 만드는 메서드를 사용하거나 얕은 복사를 수행하는 Object.assign, spread syntax를 사용</strong>한다.</p>
 <h4>도움 받은 글</h4>
 <p><a href="https://velopert.com/3636">https://velopert.com/3636</a><br/>
 <a href="https://academy.dream-coding.com/">https://academy.dream-coding.com/</a><br/>
