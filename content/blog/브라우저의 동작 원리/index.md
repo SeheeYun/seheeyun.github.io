@@ -16,7 +16,7 @@ tags: ["browser", "javascript"]
 2. CSS 마크업을 처리하고 CSSOM 트리를 빌드
 3. DOM 및 CSSOM을 결합하여 렌더 트리를 형성한다. 이때, 최종적으로 브라우저에 표기될 것들만 선별하여 Render 트리를 만들게 된다(헤드는 표시되지않는 부분이기때문에 포함되지않고, 만약 display: none인 요소가 있다면 이 또한 렌더트리에 포함시키지 않는다)
 4. layout: 렌더 트리엔 화면에 표시되는 모든 노드의 콘텐츠 및 스타일 정보가 포함되어있고 이 데이터를 기반으로 기기의 **뷰포트** 내에서 노드의 정확한 위치와 크기를 계산한다.
-5. Paint: 속성 상태에 따라 레이어(그룹)를 만든다. 이 작업은 부분적으로 변경에 대응을 위해 레이어를 나눠놓고 color, background-color, border-color 등 작업을 진행한다.
+5. Paint: 속성 상태에 따라 레이어(그룹)를 만든다. 변경에 대응하기위해 부분적으로 레이어를 나눠놓고 color, background-color, border-color 등 작업을 진행한다.
 6. composition: paint에서 만들어진 레이어 순서대로 화면에 그리는 작업을 한다.
 
 렌더 트리가 수정되어서 layout 단계가 다시 발생하는 경우를 reflow라고 한다. 이는 어플리케이션의 성능을 떨어뜨리는 요인으로 **애니메이션이 발생할 때 reflow가 일어나지 않도록 해야한다.**
@@ -44,4 +44,5 @@ tags: ["browser", "javascript"]
 
 https://poiemaweb.com/js-browser<br/>
 https://developers.google.com/web/fundamentals/performance/critical-rendering-path?hl=ko<br/>
-https://academy.dream-coding.com/
+https://academy.dream-coding.com/<br/>
+[사용된 그림 출처](https://poiemaweb.com/js-browser)

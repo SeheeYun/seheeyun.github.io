@@ -18,28 +18,28 @@ tags: ["javascript", "browser"]
 ### JavaScript 엔진의 이해
 
 ![자바스크립트 엔진 구조](https://joshua1988.github.io/images/posts/web/translation/how-js-works/js-engine-structure.png)
-자바스크립트 엔진은 위와같이 크게 **Memory Heap**과 **Call Stack**으로 나누어져있다.
+자바스크립트 엔진은 위와같이 크게 `Memory Heap`과 `Call Stack`으로 나누어져있다.<br/>
+[참고1](https://velog.io/@hidaehyunlee/메모리-구조를-알아보자) [참고2](https://curryyou.tistory.com/276)
 
 자바스크립트는 멀티스레딩이아닌 싱글 스레드 언어이다. 하지만 자바스크립트가 동작하는 브라우저는 여러개의 스레드를 가지고있고 이 브라우저가 제공하는 웹 APIs(fetch, setTimeout, eventListener 등)들을 이용하게 되면 멀티스레딩이 가능하다.
 
 ### 브라우저 런타임 환경의 이해
 
 ![자바스크립트 런타임 환경 구조](https://joshua1988.github.io/images/posts/web/translation/how-js-works/js-engine-runtime.png)
-각 브라우저의 자바스크립트 엔진을 통한 자바스크립트의 실행 환경, 런타임 환경에서는 다양한 일들을 동시에 실행할 수 있다.
 
 1. **Call Stack**<br/>
-   함수를 호출하게 되면 이 콜 스택에 쌓인다. 실행되고 나면 콜 스택에서 사라진다.
+   함수를 호출하게 되면 이 콜 스택에 함수 실행 컨텍스트가 쌓인다. 실행되고 나면 콜 스택에서 사라진다.
    맨 위에 항목을 추가하는 push, 맨 위의 항목을 떼어내는 pop을 이용한 후입 선출(LIFO, Last-In First-Out)의 구조를 가진다.<br/>
    자바스크립트는 한개의 콜 스택을 가지고있기때문에 **하나의 함수가 실행되면 다른 일을 수행 할 수 없고 이 함수는 끝날 때까지 보장된다.**
 2. **Web APIs**<br/>
    함수 안에서 web api를 사용하게되면 자바스크립트 엔진과 **병렬적으로 실행**되고 등록한 콜백을 task queue에 집어넣는다.
-3. **Task Queue**
+3. **Task Queue**<br/>
    선입 선출(FIFO, First In First Out)의 구조를 가진다.
-4. **Event Loop**
-   빙글 빙글 돌면서 콜 스택과 태스크 큐를 관찰한다. 콜 스택에 쌓여있는 스택들이 모두 실행되어 **스택이 비어있는 상태가되면 태스크 큐에있는 콜백 함수를 콜 스택에 추가**한다. 큐에 여러개의 콜백이 있어도 한 번에 한 개의 콜백만 가져온다.
+4. **Event Loop**<br/>
+   빙글 빙글 돌면서 콜 스택과 태스크 큐를 관찰한다. 콜 스택에 쌓여있는 컨텍스트들이 모두 실행되어 **스택이 비어있는 상태가되면 태스크 큐에있는 콜백 함수를 콜 스택에 추가**하고 함수가 실행된다. **태스크 큐에 여러개의 콜백이 있어도 한 번에 한 개의 콜백만 가져온다.**
 
 #### 도움 받은 글
 
 https://velog.io/@raejoonee/프로세스와-스레드의-차이<br/>
 https://academy.dream-coding.com/<br/>
-[사용된 그림 출처](https://joshua1988.github.io/)
+[사용된 그림 출처](https://joshua1988.github.io/web-development/translation/javascript/how-js-works-inside-engine/)

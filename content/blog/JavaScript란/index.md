@@ -1,5 +1,5 @@
 ---
-title: "JavaScript란?"
+title: "JavaScript란"
 date: "2021-08-07"
 tags: ["javascript"]
 ---
