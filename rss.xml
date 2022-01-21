@@ -1,22 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sehee Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://seheeyun.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 21 Jan 2022 15:56:33 GMT</lastBuildDate><item><title><![CDATA[TypeScrpit + OOP]]></title><description><![CDATA[TypeScript 타입스크립트는 Microsoft에서 개발하고 유지/관리하는 오픈 소스 프로젝트로서, 자바스크립트로 컴파일되는 superset of JavaScript…]]></description><link>https://seheeyun.github.io/TypeScrpit + OOP/</link><guid isPermaLink="false">https://seheeyun.github.io/TypeScrpit + OOP/</guid><pubDate>Fri, 21 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;TypeScript&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sehee Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://seheeyun.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 21 Jan 2022 16:04:12 GMT</lastBuildDate><item><title><![CDATA[TypeScrpit + OOP]]></title><description><![CDATA[TypeScript 타입스크립트는 Microsoft에서 개발하고 유지/관리하는 오픈 소스 프로젝트로서, 자바스크립트로 컴파일되는 superset of JavaScript…]]></description><link>https://seheeyun.github.io/TypeScrpit + OOP/</link><guid isPermaLink="false">https://seheeyun.github.io/TypeScrpit + OOP/</guid><pubDate>Fri, 21 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;TypeScript&lt;/h3&gt;
 &lt;p&gt;타입스크립트는 Microsoft에서 개발하고 유지/관리하는 오픈 소스 프로젝트로서, 자바스크립트로 컴파일되는 superset of JavaScript 이기 때문에 자바스크립트가 동작하는 모든 곳에서 대체하여 사용할 수 있는 언어이다.&lt;/p&gt;
 &lt;p&gt;자바스크립트는 C나 Java와 같은 C-family 언어와는 구별되는 아래와 같은 특성이 있는데&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;- 동적 타입(dynamic typed) 언어 혹은 느슨한 타입(loosely typed) 언어
-- Prototype-based Object Oriented Language&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;동적 타입(dynamic typed) 언어 혹은 느슨한 타입(loosely typed) 언어&lt;/li&gt;
+&lt;li&gt;Prototype-based Object Oriented Language&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;자바스크립트는 런타임에 실시간으로 타입이 결정되는 동적 언어이기때문에 런타임 환경에서 예상치 못한 에러가 발생할 수 있다. 타입스크립트는 정적 타이핑을 지원하고 이는 사전에 타입을 명시적으로 선언하도록하며 잘못된 값을 할당할 경우 컴파일러를 통해 대부분의 에러를 확인 할 수 있게한다.&lt;/p&gt;
 &lt;p&gt;또한 타입스크립트는 interface, generic 등을 지원하여 클래스를 베이스로하는 다른 언어들과같이 더욱 강력한 객체 지향 프로그래밍을 가능하게 한다.&lt;/p&gt;
 &lt;h3&gt;객체 지향 프로그래밍(Object-Oriented Programming)&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;객체 지향 프로그래밍은 컴퓨터 프로그래밍의 패러다임 중 하나로, 프로그램을 명령어의 목록으로 보는 시각에서 벗어나 여러 개의 독립된 단위, 즉 &amp;quot;객체&amp;quot;들의 모임으로 파악하고자 하는 것이다. 각각의 객체는 메시지를 주고받고, 데이터를 처리할 수 있다.
-프로그램을 유연하고 변경이 쉽게 만들기 때문에 대규모 소프트웨어 개발에 많이 사용된다. 또한 프로그래밍을 더 배우기 쉽게 하고 소프트웨어 개발과 보수를 간편하게 하며, 보다 직관적인 코드 분석을 가능하게 하는 장점이 있다.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;객체 지향 프로그래밍은 컴퓨터 프로그래밍의 패러다임 중 하나로, 프로그램을 명령어의 목록으로 보는 시각에서 벗어나 여러 개의 독립된 단위, 즉 “객체”들의 모임으로 파악하고자 하는 것이다. 각각의 객체는 메시지를 주고받고, 데이터를 처리할 수 있다. 프로그램을 유연하고 변경이 쉽게 만들기 때문에 대규모 소프트웨어 개발에 많이 사용된다. 또한 프로그래밍을 더 배우기 쉽게 하고 소프트웨어 개발과 보수를 간편하게 하며, 보다 직관적인 코드 분석을 가능하게 하는 장점이 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h4&gt;Encapsulation 캡슐화&lt;/h4&gt;
 &lt;p&gt;서로 관련있는 데이터와 메서드를 한 오브젝트안에 담아두고 외부에서 보일 필요가 없는 데이터를 잘 숨겨놓음으로써 캡슐화 하는것.&lt;/p&gt;
 &lt;p&gt;외부에서 내부의 상태를 직접 조작하게 하는 것은 위험하기때문에 private 키워드와 같은 접근제어자로 은닉화해서 외부에서 접근 할 수 없도록 해준다.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;public&lt;br/&gt;
+&lt;li&gt;&lt;strong&gt;public&lt;/strong&gt;&lt;br/&gt;
 클래스로 만들어준 오브젝트에는 클래스의 멤버변수들이 인스턴스화하여 생성되어있다. 아무런 키워드가 없다면 public 으로 외부에서 바로 접근이 가능하다.&lt;/li&gt;
-&lt;li&gt;private&lt;br/&gt;
+&lt;li&gt;&lt;strong&gt;private&lt;/strong&gt;&lt;br/&gt;
 클래스의 내부에서만 사용되며 외부로 노출되지 않는다.&lt;/li&gt;
-&lt;li&gt;protected&lt;br/&gt;
+&lt;li&gt;&lt;strong&gt;protected&lt;/strong&gt;&lt;br/&gt;
 외부에서 접근할 수 없고, 자신을 상속하는 자식 클래스에서만 접근이 가능하다.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;생성자 함수(constructor) 자체를 private으로 만들면 클래스를 생성자 함수로 생성할 수 없어지기때문에 메서드를 static 으로 제공해서 클래스에 메서드만 사용해서 오브젝트를 생성하게 할 수 도있다.&lt;/p&gt;
@@ -30,7 +33,7 @@
 &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; machine &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; CoffeeMachineImple&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;makeMachine&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;static&lt;br/&gt;
+&lt;p&gt;&lt;strong&gt;static&lt;/strong&gt;&lt;br/&gt;
 클래스의 멤버변수는 클래스를 인스턴스화 했을 때 생성, 바뀌지 않는 값이되고 해당 클래스로 생성한 모든 인스턴스마다 저 값이 중복적으로 생성되기때문에 메모리 낭비가 된다. 이럴 경우 변수앞에 &lt;strong&gt;static을 붙여줘서 클래스 레벨로 지정&lt;/strong&gt;해 줄 수 있다. static을 붙이지 않으면 인스턴스 레벨이다.&lt;/p&gt;
 &lt;p&gt;위와 같이 클래스 레벨로 만든경우 이 클래스로 생성된 인스턴스가 아닌 클래스 자체의 데이터이기 때문에 this.가 아닌 클래스 이름 자체를 지정해서 접근한다.&lt;/p&gt;
 &lt;/li&gt;
